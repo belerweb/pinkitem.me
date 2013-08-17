@@ -222,7 +222,7 @@ class Enj0yWordPressossPlugin extends Enj0yWordPressossPluginPublic {
 			$obj = new ALIOSS($this->options['key'],$this->options['secret']);
 			$obj->set_debug_mode(FALSE);
 
-			$p=date('Y/m/');
+			$p='cGlua2l0ZW0ubWU'.date('/Y/m/');
 			if ($obj->putObjectStream($this->options['bucket'], $p.$file['name'], $file ,$this->options['expires'], 'public-read', array(), false, $this->options['smush-it'], $this->options['ignore-gif'])) {
 			    
 			    if ($data['thumb']) {
