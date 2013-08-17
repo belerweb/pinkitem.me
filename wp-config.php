@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         $_ENV['PINKITEM_AUTH_KEY']);
-define('SECURE_AUTH_KEY',  $_ENV['PINKITEM_SECURE_AUTH_KEY']);
-define('LOGGED_IN_KEY',    $_ENV['PINKITEM_LOGGED_IN_KEY']);
-define('NONCE_KEY',        $_ENV['PINKITEM_NONCE_KEY']);
-define('AUTH_SALT',        $_ENV['PINKITEM_AUTH_SALT']);
-define('SECURE_AUTH_SALT', $_ENV['PINKITEM_SECURE_AUTH_SALT']);
-define('LOGGED_IN_SALT',   $_ENV['PINKITEM_LOGGED_IN_SALT']);
-define('NONCE_SALT',       $_ENV['PINKITEM_NONCE_SALT']);
+define('AUTH_KEY',         $_ENV['PINKITEM_SALT']);
+define('SECURE_AUTH_KEY',  $_ENV['PINKITEM_SALT']);
+define('LOGGED_IN_KEY',    $_ENV['PINKITEM_SALT']);
+define('NONCE_KEY',        $_ENV['PINKITEM_SALT']);
+define('AUTH_SALT',        $_ENV['PINKITEM_SALT']);
+define('SECURE_AUTH_SALT', $_ENV['PINKITEM_SALT']);
+define('LOGGED_IN_SALT',   $_ENV['PINKITEM_SALT']);
+define('NONCE_SALT',       $_ENV['PINKITEM_SALT']);
 
 /**#@-*/
 
