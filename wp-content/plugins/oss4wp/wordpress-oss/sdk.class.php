@@ -3689,8 +3689,7 @@ class ALIOSS{
 		}
 
 		if(function_exists(date_default_timezone_set))date_default_timezone_set('PRC');
-		$p=date('Y/m/');
-		$result = $this->upload_file_by_content($bucket,$p.$fileInfo[name],$upload_file_options);
+		$result = $this->upload_file_by_content($bucket,$key,$upload_file_options);
 
         $this->responseString = $result;
         $this->responseCode = '200';
