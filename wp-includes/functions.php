@@ -1598,7 +1598,8 @@ function wp_upload_dir( $time = null ) {
 			$time = current_time( 'mysql' );
 		$y = substr( $time, 0, 4 );
 		$m = substr( $time, 5, 2 );
-		$subdir = "/$y/$m";
+        $d = substr( $time, 8, 2 );
+        $subdir = "/cGlua2l0ZW0ubWU/$y/$m/$d";
 	}
 
 	$dir .= $subdir;
